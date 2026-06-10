@@ -1,0 +1,79 @@
+:root {
+
+  /* ========================
+     BACKGROUND & SURFACE
+     ======================== */
+  --color-bg:                 #0b1326;
+  --color-surface-lowest:     #060e20;
+  --color-surface-low:        #131b2e;
+  --color-surface:            #171f33;
+  --color-surface-high:       #222a3d;
+  --color-surface-highest:    #2d3449;
+  --color-surface-bright:     #31394d;
+
+  /* ========================
+     TEXT
+     ======================== */
+  --color-text:               #dae2fd;   /* primary / heading */
+  --color-text-muted:         #c7c4d7;   /* body */
+  --color-text-subtle:        #908fa0;   /* caption / placeholder */
+  --color-text-inverse:       #283044;
+
+  /* ========================
+     PRIMARY — Indigo
+     ======================== */
+  --color-primary-light:      #e1e0ff;
+  --color-primary-soft:       #c0c1ff;
+  --color-primary:            #8083ff;
+  --color-primary-dark:       #494bd6;
+  --color-primary-deep:       #2f2ebe;
+  --color-primary-on:         #1000a9;
+  --color-primary-deepest:    #0d0096;
+  --color-primary-base:       #07006c;
+
+  /* ========================
+     SECONDARY — Cyan
+     ======================== */
+  --color-secondary-light:    #c4e7ff;
+  --color-secondary:          #7bd0ff;
+  --color-secondary-dark:     #00a6e0;
+  --color-secondary-on:       #004c69;
+  --color-secondary-deep:     #00354a;
+  --color-secondary-deepest:  #001e2c;
+
+  /* ========================
+     TERTIARY — Orange
+     ======================== */
+  --color-tertiary-light:     #ffdcc5;
+  --color-tertiary:           #ffb783;
+  --color-tertiary-dark:      #d97721;
+  --color-tertiary-on:        #703700;
+  --color-tertiary-deep:      #4f2500;
+  --color-tertiary-deepest:   #301400;
+
+  /* ========================
+     ERROR — Red
+     ======================== */
+  --color-error-light:        #ffdad6;
+  --color-error:              #ffb4ab;
+  --color-error-dark:         #93000a;
+  --color-error-on:           #690005;
+
+  /* ========================
+     BORDER & OUTLINE
+     ======================== */
+  --color-outline:            #908fa0;
+  --color-outline-variant:    #464554;
+  --color-border:             rgba(255, 255, 255, 0.08);
+  --color-border-hover:       rgba(128, 131, 255, 0.30);
+
+  /* ========================
+     UTILITY / OVERLAY
+     ======================== */
+  --color-overlay:            rgba(0, 0, 0, 0.40);
+  --color-mark-bg:            rgba(128, 131, 255, 0.20);
+  --color-mark-border:        #8083ff;
+  --color-glow-primary:       rgba(128, 131, 255, 0.20);
+  --color-glow-secondary:     rgba(123, 208, 255, 0.20);
+
+}
