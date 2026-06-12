@@ -100,11 +100,14 @@ body{
 
 /* Navbar */
 header{
+   background-color: var(--color-bg);
    position: sticky;
    display:flex;
    justify-content: space-between;
    align-items: center;
    padding: 1rem 2rem;
+   top: 0;
+   border-bottom: 0.1rem solid var(--color-border);
 }
 
 nav{
@@ -130,7 +133,7 @@ nav a.active {
 
 /* Footer */
 footer{
-   padding: 3rem 2.5rem;
+   padding: 3rem 2rem;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -154,7 +157,7 @@ ul li:hover{
 
 /* Hero Section */
 .hero{
-   min-height: 80vh;
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -177,8 +180,36 @@ ul li:hover{
 mark{
    background-color: var(--color-text-inverse);
    color: var(--color-primary);
-   padding: 0.1rem 0.25rem;
+   padding: 0.2rem 0.25rem;
    border-radius: 4px;
+}
+
+mark.normal{
+   padding: 0.2rem 0.5rem;
+}
+
+mark.secondary{
+   background-color: rgb(from var(--color-secondary-dark) r g b/ 0.2);
+   color: var(--color-secondary);
+   border: 0.1rem solid rgb(from var(--color-secondary) r g b/ 0.3);
+}
+
+mark.tertiary{
+   background-color: rgb(from var(--color-tertiary-dark) r g b/ 0.2);
+   color: var(--color-tertiary);
+   border: 0.1rem solid rgb(from var(--color-tertiary) r g b/ 0.3);
+}
+
+mark.primary{
+   background-color: rgb(from var(--color-primary-dark) r g b/ 0.2);
+   color: var(--color-primary);
+   border: 0.1rem solid rgb(from var(--color-primary) r g b/ 0.3);
+}
+
+mark.muted{
+   background-color: rgb(from var(--color-outline-variant) r g b/ 0.2);
+   color: var(--color-text-muted);
+   border: 0.1rem solid rgb(from var(--color-outline-variant) r g b/ 0.3);
 }
 
 a{
@@ -249,11 +280,65 @@ button.default:hover{
 button.outline{
    background-color: transparent;
    color: var(--color-text);
-   border: 0.1rem solid var(--color-outline);
+   border: 0.1rem solid var(--color-text-subtle);
    transition: all 0.3s ease;
 }
 
 button.outline:hover{
    color: var(--color-primary);
    border-color: var(--color-primary);
+}
+
+/* Table Content */
+.table-content{
+   padding: 4rem 1.5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   justify-content: center;
+   background-color: var(--color-surface-low);
+}
+
+.table-content h2{
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+table{
+   border: 0.1rem solid var(--color-border-hover);
+   border-radius: 12px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
+   overflow: hidden;
+}
+
+table td{
+   padding: 1.5rem;
+   border-bottom: 0.1rem solid var(--color-surface-high);
+}
+
+thead{
+   background-color: var(--color-surface-high);
+   font-weight: 500;
+}
+
+tbody tr{
+   transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(odd){
+   background-color: var(--color-surface);
+}
+
+tbody tr:nth-child(even){
+   background-color: var(--color-surface-low);
+}
+
+tbody tr:hover{
+   background-color: var(--color-surface-high);
 }
