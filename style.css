@@ -456,6 +456,13 @@ tbody tr:hover {
    MOBILE — 320px - 425px
    ======================== */
 @media (max-width: 426px) {
+  header h2{
+    display: none;
+  }
+
+  header{
+    justify-content: center;
+  }
 
   /* Hero */
   .hero {
