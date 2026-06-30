@@ -103,11 +103,11 @@ function getFitClass(fitValue = "") {
   const fit = fitValue.toLowerCase();
 
   if (fit.includes("high") || fit.includes("tinggi")) {
-    return "secondary";
+    return "tertiary";
   }
 
   if (fit.includes("medium") || fit.includes("sedang")) {
-    return "tertiary";
+    return "secondary";
   }
 
   return "muted";
