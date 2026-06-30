@@ -412,6 +412,72 @@ tbody tr:hover {
   font-size: 1rem;
 }
 
+.recommend-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 640px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background-color: var(--color-surface);
+  border: 0.1rem solid var(--color-outline-variant);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-group input:invalid:not(:placeholder-shown),
+.form-group textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--color-error);
+}
+
+.form-group small {
+  color: var(--color-text-subtle);
+  font-size: 0.8rem;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  min-height: 1.2rem;
+}
+
+.form-status.error {
+  color: var(--color-error);
+}
+
+.form-status.success {
+  color: var(--color-secondary);
+}
+
+#result-section {
+  background-color: var(--color-surface-low);
+}
+
 /* ========================
    TABLET — 768px
    ======================== */

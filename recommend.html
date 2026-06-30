@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="recommend.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Hobbies | Language Recommender</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero" style="padding: 4rem 8rem; min-height: auto">
+        <h3 class="shiny">&lt;&gt; AI-Powered</h3>
+        <h1>Find Your <mark>Next</mark> Language</h1>
+        <p>
+          Isi sedikit info tentang proyek dan levelmu, lalu biarkan AI
+          menyarankan bahasa pemrograman yang paling cocok untukmu.
+        </p>
+      </section>
+
+      <section class="table-content">
+        <h2>
+          <img
+            src="/assets/terminal.svg"
+            alt="Terminal Icon"
+            width="24"
+            height="24"
+          />
+          Recommendation Form
+        </h2>
+
+        <form id="recommend-form" class="recommend-form" novalidate>
+          <div class="form-group">
+            <label for="project-desc">Deskripsi Proyek</label>
+            <textarea
+              id="project-desc"
+              name="project-desc"
+              rows="4"
+              placeholder="Contoh: ingin membuat aplikasi mobile sederhana untuk catatan harian"
+              required
+              minlength="10"
+              maxlength="500"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Lama Belajar Coding (tahun)</label>
+            <input
+              type="number"
+              id="experience"
+              name="experience"
+              placeholder="Contoh: 1"
+              required
+              min="0"
+              max="50"
+              step="1"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="goal">Tujuan Utama</label>
+            <select id="goal" name="goal" required>
+              <option value="" disabled selected>Pilih tujuan</option>
+              <option value="web">Web Development</option>
+              <option value="mobile">Mobile Development</option>
+              <option value="game">Game Development</option>
+              <option value="data">Data Science / AI</option>
+              <option value="backend">Backend / API</option>
+              <option value="automation">Automation / Scripting</option>
+            </select>
+          </div>
+
+          <div class="wrap-buttons">
+            <button type="submit" class="default" id="submit-btn">
+              Generate Recommendation
+            </button>
+            <button type="button" class="outline" id="clear-btn">
+              Clear Saved Data
+            </button>
+          </div>
+
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </section>
+
+      <section class="information" id="result-section">
+        <h2>Hasil Rekomendasi</h2>
+        <div class="table-wrapper">
+          <table cellspacing="0" cellpadding="0" id="result-table">
+            <thead>
+              <tr>
+                <td>Bahasa</td>
+                <td>Alasan</td>
+                <td>Tingkat Kesesuaian</td>
+              </tr>
+            </thead>
+            <tbody id="result-table-body">
+              <tr>
+                <td colspan="3" style="text-align: center; color: var(--color-text-subtle)">
+                  Belum ada rekomendasi. Isi form di atas dan klik "Generate Recommendation".
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>&lt;/&gt; My Hobbies</h2>
+      <p>&copy; 2026 Developer Hobbies. Built with focus.</p>
+      <ul>
+        <li>Privacy</li>
+        <li>Terms</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+    <script src="recommend.js"></script>
+  </body>
+</html>
